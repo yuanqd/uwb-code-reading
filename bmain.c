@@ -2,8 +2,8 @@
  *  @file    main.c
  *  @brief   单侧双向测距响应者示例代码(SS TWR)//Single-sided two-way ranging (SS TWR) responder example code
  *
- * yuanqd:这是一个简单示例代码，在SS TWR 距离测量交换中扮演响应者的角色。这个程序等待一个来自发起者的"poll"消息，（记录了poll的RX时间戳），然后发送一个响应消息以完成交换。这个响应消息包含了这个程序记录的所有时间戳。包括计算的/预测的该程序自己的TX时间戳。对应的SS TWR发起者程序将把飞行时间，然后就可以把二者之间的距离估计出来。//This is a simple code example which acts as the responder in a SS TWR distance measurement exchange. This application waits for a "poll"
- *message (recording the RX time-stamp of the poll) expected from the "SS TWR initiator" example code (companion to this application), and then sends a "response" message to complete the exchange. The response message contains all the time-stamps recorded by this application, including the calculated/predicted TX time-stamp for the response message itself. The companion "SS TWR initiator" example application works out the time-of-flight over-the-air and, thus, the estimated distance between the two devices.
+ * yuanqd:这是一个简单示例代码，在SS TWR *距离测量交换中扮演响应者的角色。这个程序等待一*个来自发起者的"poll"消息，（记录了poll的RX时间*戳），然后发送一个响应消息以完成交换。这个响应*消息包含了这个程序记录的所有时间戳。包括计算的/预测的该程序自己的TX时间戳。对应的SS *TWR发起者程序将把飞行时间，然后就可以把二者之*间的距离估计出来。//This is a simple code *example which acts as the responder in a SS *TWR distance measurement exchange. This *application waits for a "poll"
+ *message (recording the RX time-stamp of the *poll) expected from the "SS TWR initiator" *example code (companion to this *application), and then sends a "response" *message to complete the exchange. The *response message contains all the *time-stamps recorded by this application, *including the calculated/predicted TX *time-stamp for the response message itself. *The companion "SS TWR initiator" example *application works out the time-of-flight *over-the-air and, thus, the estimated *distance between the two devices.
  *
  * @attention
  *
